@@ -35,16 +35,16 @@ const Contact = () => {
 		}
 
 		const emailPromise = emailjs.send(
-			SERVICE_ID,
-			TEMPLATE_ID,
+			'service_7nh9cjs',
+			'template_6jjiksl',
 			{
 				from: form.name,
-				to: 'Nivindu Lakshitha',
+				to: 'Raniyuki',
 				from_email: form.email,
-				to_email: 'nivindulakshitha@gmail.com',
+				to_email: 'raniyuki65@gmail.com',
 				message: form.message
 			},
-			PUBLIC_KEY
+			'PBojUtgTaeYCAp_4n'
 		);
 
 		emailPromise
