@@ -1,13 +1,16 @@
 import { useState } from 'react';
-import { projects } from '../constants'
+import { getTranslatedConstants } from '../constants/translatedConstants'
 import { ComputersCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { motion } from "framer-motion";
 import { textVariant } from '../utils/motion';
 import { styles } from '../styles';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Projects = () => {
     const [selectedProjectIndex, setSelectedProjectIndex] = useState(0)
+    const { t } = useLanguage();
+    const { projects } = getTranslatedConstants(t);
     const projectsCount = projects.length;
     const currentProject = projects[selectedProjectIndex];
     const isMobile = window.matchMedia("(max-width: 500px)").matches;
@@ -27,8 +30,8 @@ const Projects = () => {
     return (
         <>
             <motion.div variants={textVariant()}>
-                <p className={styles.sectionSubText}>I have learnt a lot completing following</p>
-                <h2 className={styles.sectionHeadText}>30+ Projects.</h2>
+                <p className={styles.sectionSubText}>{t('nav.projects')}</p>
+                <h2 className={styles.sectionHeadText}>{t('nav.projects')}.</h2>
             </motion.div>
             <section className="c-space my-5">
                 <div className='grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full'>
