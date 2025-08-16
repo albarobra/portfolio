@@ -119,8 +119,8 @@ const Contact = () => {
 							<a href="https://wa.me/6283137370436" target="_blank">
 								<img src="./socials/whatsapp.svg" alt="WhatsApp" className="w-[40px] h-[40px] cursor-pointer p-[2px]" />
 							</a>
-							<a href="https://github.com/miracledev3" target="_blank">
-								<img src="./socials/github.png" alt="GitHub" className="w-[40px] h-[40px] cursor-pointer" />
+							<a href="https://github.com/Marveloustech1" target="_blank">
+								<img src="./socials/github.svg" alt="GitHub" className="w-[40px] h-[40px] cursor-pointer" />
 							</a>
 						</div>
 					</div>
