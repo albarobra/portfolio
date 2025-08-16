@@ -113,14 +113,14 @@ const Contact = () => {
 							{loading ? "Sending..." : "Send Message"}
 						</button>
 						<div className="flex gap-8 items-center">
-							<a href="https://www.linkedin.com/in/nivindulakshitha" target="_blank">
-								<img src="./socials/linkedin.svg" alt="LinkedIn" className="w-[40px] h-[40px] cursor-pointer p-[6px]" />
+							<a href="https://t.me/marvelous2" target="_blank">
+								<img src="./socials/telegram.svg" alt="Telegram" className="w-[40px] h-[40px] cursor-pointer p-[6px]" />
 							</a>
-							<a href="https://github.com/nivindulakshitha" target="_blank">
+							<a href="https://wa.me/6283137370436" target="_blank">
+								<img src="./socials/whatsapp.svg" alt="WhatsApp" className="w-[40px] h-[40px] cursor-pointer p-[2px]" />
+							</a>
+							<a href="https://github.com/miracledev3" target="_blank">
 								<img src="./socials/github.png" alt="GitHub" className="w-[40px] h-[40px] cursor-pointer" />
-							</a>
-							<a href="mailto:nivindulakshitha@gmail.com" target="_blank">
-								<img src="./socials/email.svg" alt="Email" className="w-[40px] h-[40px] cursor-pointer p-[2px]" />
 							</a>
 						</div>
 					</div>
