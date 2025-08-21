@@ -50,7 +50,7 @@ const Navbar = () => {
 								>
 									{
 										link.id === 'cv' ? (
-											<a href="./Nivindu Lakshitha CV.pdf" target="_blank">{t(`nav.${link.id}`)}</a>
+											<a href="./fujitayusuke.pdf" target="_blank">{t(`nav.${link.id}`)}</a>
 										) : (
 											<a href={`#${link.id}`}>{t(`nav.${link.id}`)}</a>
 										)

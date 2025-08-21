@@ -49,10 +49,10 @@ export const navLinks = [
 		title: "Contact",
 	}
 	,
-	// {
-	// 	id: "cv",
-	// 	title: "My CV",
-	// },
+	{
+		id: "cv",
+		title: "My CV",
+	},
 ];
 
 const services = [
