@@ -5,9 +5,10 @@ import { VerticalTimelineElement } from 'react-vertical-timeline-component'
 import { motion } from 'framer-motion'
 import 'react-vertical-timeline-component/style.min.css'
 import { styles } from '../styles'
-import { experiences } from '../constants'
+import { getTranslatedConstants } from '../constants/translatedConstants'
 import { SectionWrapper } from '../hoc'
 import { textVariant } from '../utils/motion'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const ExperienceCard = ({ experience }) => {
 	return (
@@ -41,11 +42,14 @@ const ExperienceCard = ({ experience }) => {
 }
 
 const Experience = () => {
+	const { t } = useLanguage();
+	const { experiences } = getTranslatedConstants(t);
+	
 	return (
 		<>
 			<motion.div variants={textVariant()}>
-				<p className={styles.sectionSubText}>I have gone through many</p>
-				<h2 className={styles.sectionHeadText}>Life Milestones.</h2>
+				<p className={styles.sectionSubText}>{t('nav.milestones')}</p>
+				<h2 className={styles.sectionHeadText}>{t('nav.milestones')}.</h2>
 			</motion.div>
 
 			<div className="mt-20 flex flex-col overflow-x-hidden">

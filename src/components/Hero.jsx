@@ -2,9 +2,11 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import Developer from './Developer';
 import { useEffect, useState } from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Hero = ({ isContactVisible, setIsContactVisible }) => {
 	const [isMobile, setIsMobile] = useState(true);
+	const { t } = useLanguage();
 
 	useEffect(() => {
 		const mediaQuery = window.matchMedia('(max-width: 500px)');
@@ -43,15 +45,15 @@ const Hero = ({ isContactVisible, setIsContactVisible }) => {
 
 				<div>
 					<h1 className={`${styles.heroHeadText}`}>
-						Hi, I&apos;m <span className="text-[#915EFF]">Lakshitha</span>
+						{t('hero.greeting')} <span className="text-[#915EFF]">{t('hero.name')}</span>
 					</h1>
 					<p className={`${styles.heroSubText} mt-2 text-white-100`}>
-						Building Full Stack solutions with a focus on <br className="sm:block hidden" /> problem-solving and teamwork!
+						{t('hero.subtitle')}
 					</p>
 					{
 						!isMobile && (
 							<p className={`text-md mt-2 text-justify max-w-[500px] text-secondary`}>
-								My projects reflect a high level of proficiency in leveraging modern tools and technologies such as React, Ballerina, MongoDB, Python and Docker to build scalable and impactful solutions.
+								{t('hero.description')}
 							</p>
 						)
 					}

@@ -1,23 +1,25 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { modelVersionName } from "../constants";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const TipsAssistant = ({ isContactVisible }) => {
 	const [freezed, setFreezed] = useState(false);
+	const { t } = useLanguage();
 
 	useEffect(() => {
 		setFreezed(isContactVisible);
 	}, [isContactVisible]);
 
 	const tips = [
-		"Welcome to my portfolio! Explore my portfolio using the menu above.",
-		"Check out the Projects section to see my latest work.",
-		"3D models are limited to mobile devices due to performance issues. Sorry!",
-		"For the best experience, view this portfolio on a laptop or desktop computer.",
-		"If the 3D models disappear suddenly, try refreshing the page.",
-		"You can have my CV in the navigation menu. Just check it out!",
-		"You can contact me through the Contact section at the bottom of the page.",
-		"Feel free to interact with the 3D objects whenever possible!"
+		t('tips.welcome'),
+		t('tips.projects'),
+		t('tips.mobile3d'),
+		t('tips.desktop'),
+		t('tips.refresh'),
+		t('tips.cv'),
+		t('tips.contact'),
+		t('tips.interact')
 	];
 
 	const [currentTipIndex, setCurrentTipIndex] = useState(0);
@@ -53,7 +55,7 @@ const TipsAssistant = ({ isContactVisible }) => {
 				<p className="text-white text-sm font-medium">
 					{freezed ? (
 						<>
-							You have reached the end of my portfolio. I am feeling confident and want to see how much?
+							{t('tips.endMessage')}
 							<a
 								onClick={() => {
 									window.scrollTo(0, 0);
@@ -61,7 +63,7 @@ const TipsAssistant = ({ isContactVisible }) => {
 								}}
 								className="cursor-pointer"
 							>
-								<span className="text-[#915EFF]"> Click here! </span>
+								<span className="text-[#915EFF]"> {t('tips.clickHere')} </span>
 							</a>
 						</>
 					) : tips[currentTipIndex]}

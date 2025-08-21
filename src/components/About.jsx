@@ -6,9 +6,10 @@ import { Tilt } from 'react-tilt'
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { services } from "../constants";
+import { getTranslatedConstants } from "../constants/translatedConstants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const ServiceCard = ({ index, title, icon }) => (
 	<Tilt
@@ -40,22 +41,21 @@ const ServiceCard = ({ index, title, icon }) => (
 
 
 const About = () => {
+	const { t } = useLanguage();
+	const { services } = getTranslatedConstants(t);
+	
 	return (
 		<>
 			<motion.div variants={textVariant()}>
-				<p className={styles.sectionSubText}>Introduction</p>
-				<h2 className={styles.sectionHeadText}>Overview.</h2>
+				<p className={styles.sectionSubText}>{t('about.introduction')}</p>
+				<h2 className={styles.sectionHeadText}>{t('about.overview')}.</h2>
 			</motion.div>
 
 			<motion.p
 				variants={fadeIn("", "", 0.1, 1)}
 				className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-left'
 			>
-				I&apos;m a skilled software developer with experience in TypeScript and
-				JavaScript, and expertise in frameworks like React, Node.js, and
-				Three.js. I&apos;m a quick learner and collaborate with team members to
-				create efficient, scalable, and user-friendly solutions that solve
-				real-world problems. Let&apos;s work together to bring your ideas to life!
+				{t('about.description')}
 			</motion.p>
 
 			<div className='mt-20 flex flex-wrap gap-10'>
