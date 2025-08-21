@@ -31,22 +31,23 @@ const Contact = () => {
 		setLoading(true);
 
 		if (!form.name || !form.email || !form.message) {
-			alert(t('contact.fillAllFields'));
+			alert(t('contact'));
 			setLoading(false);
 			return;
 		}
 
+		{
+		}
+
 		const emailPromise = emailjs.send(
-			'service_7nh9cjs',
-			'template_6jjiksl',
+			'service_njupemk',
+			'template_8mwthh8',
 			{
-				from: form.name,
-				to: 'Raniyuki',
-				from_email: form.email,
-				to_email: 'raniyuki65@gmail.com',
-				message: form.message
+				name: form.name,
+				message: form.message,
+				from:form.email
 			},
-			'PBojUtgTaeYCAp_4n'
+			'rilgPask0j_ZRbDBQ'
 		);
 
 		emailPromise

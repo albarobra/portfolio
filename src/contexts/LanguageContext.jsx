@@ -19,11 +19,9 @@ export const LanguageProvider = ({ children }) => {
   useEffect(() => {
     // Load language preference from localStorage if available
     const savedLanguage = localStorage.getItem('language');
-    console.log('LanguageContext: savedLanguage from localStorage:', savedLanguage);
     if (savedLanguage && (savedLanguage === 'ja' || savedLanguage === 'en')) {
       setCurrentLanguage(savedLanguage);
       setTranslations(savedLanguage === 'ja' ? ja : en);
-      console.log('LanguageContext: loaded saved language:', savedLanguage);
     } else {
       console.log('LanguageContext: using default language (Japanese)');
     }
@@ -50,7 +48,6 @@ export const LanguageProvider = ({ children }) => {
       }
     }
     
-    console.log(`Translation for key "${key}": "${value}" (language: ${currentLanguage})`);
     return value;
   };
 
