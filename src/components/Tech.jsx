@@ -16,8 +16,10 @@ import figma from '../assets/tech/figma.png'
 import docker from '../assets/tech/docker.png'
 import python from '../assets/tech/python.svg'
 import gcp from '../assets/tech/gcp.svg'
+import flutter from '../assets/tech/flutter.svg'
 
 const technologies = [
+	
 	{
 		name: "JavaScript",
 		icon: javascript,
@@ -33,6 +35,10 @@ const technologies = [
 	{
 		name: "Tailwind CSS",
 		icon: tailwind,
+	},
+		{
+		name: "flutter",
+		icon: flutter,
 	},
 	{
 		name: "Node JS",
@@ -65,7 +71,8 @@ const technologies = [
 	{
 		name: "gcp",
 		icon: gcp,
-	}
+	},
+
 ];
 
 const shorted_technologies = [
