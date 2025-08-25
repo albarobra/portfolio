@@ -43,7 +43,7 @@ const Hero = ({ isContactVisible, setIsContactVisible }) => {
 
 				<div>
 					<h1 className={`${styles.heroHeadText}`}>
-						Hi, I'm <span className="text-[#915EFF]">Nivindu Lakshitha</span>
+						Hi, I'm <span className="text-[#915EFF]">AlvaroBramastio</span>
 					</h1>
 					<p className={`${styles.heroSubText} mt-2 text-white-100`}>
 						Building Full Stack solutions with a focus on problem-solving and teamwork!

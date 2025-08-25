@@ -34,7 +34,7 @@ const Navbar = () => {
 					}}
 				>
 					<img src={"./logo.svg"} alt="logo" className="h-9 w-9 object-contain rounded-full" />
-					<p className='text-white text-[18px] font-bold cursor-pointer flex'>Nivindu &nbsp;<span className='sm:block hidden'>Lakshitha</span></p>
+					<p className='text-white text-[18px] font-bold cursor-pointer flex'>Alvaro &nbsp;<span className='sm:block hidden'>Bramastio</span></p>
 				</Link>
 				
 				<div className="flex items-center gap-10">
@@ -47,7 +47,7 @@ const Navbar = () => {
 								>
 									{
 										link.id === 'cv' ? (
-											<a href="./fujitayusuke.pdf" target="_blank">{link.id === 'cv' ? 'CV' : link.id}</a>
+											<a href="./albarobra.pdf" target="_blank">{link.id === 'cv' ? 'CV' : link.id}</a>
 										) : (
 											<a href={`#${link.id}`}>{link.id === 'cv' ? 'CV' : link.id}</a>
 										)
