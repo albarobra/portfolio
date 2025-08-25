@@ -8,23 +8,27 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import nodejs from "../assets/tech/nodejs.png";
+import reactjs from "../assets/tech/reactjs.png";
+import mobile from "../assets/mobile.png";
+import docker from "../assets/tech/docker.png";
 
 const services = [
 	{
 		title: "Backend Developer",
-		icon: "https://skillicons.dev/icons?i=nodejs",
+		icon: nodejs,
 	},
 	{
 		title: "Frontend Developer",
-		icon: "https://skillicons.dev/icons?i=react",
+		icon: reactjs,
 	},
 	{
 		title: "Mobile App Developer",
-		icon: "https://skillicons.dev/icons?i=react",
+		icon: mobile,
 	},
 	{
 		title: "DevOps Enthusiast",
-		icon: "https://skillicons.dev/icons?i=docker",
+		icon: docker,
 	}
 ];
 

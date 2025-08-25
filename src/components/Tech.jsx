@@ -4,74 +4,86 @@ import { SectionWrapper } from '../hoc'
 import { motion } from "framer-motion"
 import { textVariant } from '../utils/motion'
 import { styles } from '../styles'
+import javascript from '../assets/tech/javascript.png'
+import typescript from '../assets/tech/typescript.png'
+import reactjs from '../assets/tech/reactjs.png'
+import tailwind from '../assets/tech/tailwind.png'
+import nodejs from '../assets/tech/nodejs.png'
+import mongodb from '../assets/tech/mongodb.png'
+import threejs from '../assets/tech/threejs.svg'
+import git from '../assets/tech/git.png'
+import figma from '../assets/tech/figma.png'
+import docker from '../assets/tech/docker.png'
+import python from '../assets/tech/python.svg'
+import gcp from '../assets/tech/gcp.svg'
 
 const technologies = [
 	{
 		name: "JavaScript",
-		icon: "https://skillicons.dev/icons?i=javascript",
+		icon: javascript,
 	},
 	{
 		name: "TypeScript",
-		icon: "https://skillicons.dev/icons?i=typescript",
+		icon: typescript,
 	},
 	{
 		name: "React JS",
-		icon: "https://skillicons.dev/icons?i=react",
+		icon: reactjs,
 	},
 	{
 		name: "Tailwind CSS",
-		icon: "https://skillicons.dev/icons?i=tailwind",
+		icon: tailwind,
 	},
 	{
 		name: "Node JS",
-		icon: "https://skillicons.dev/icons?i=nodejs",
+		icon: nodejs,
 	},
 	{
 		name: "MongoDB",
-		icon: "https://skillicons.dev/icons?i=mongodb",
+		icon: mongodb,
 	},
 	{
 		name: "Three JS",
-		icon: "https://skillicons.dev/icons?i=threejs",
+		icon: threejs,
 	},
 	{
 		name: "git",
-		icon: "https://skillicons.dev/icons?i=git",
+		icon: git,
 	},
 	{
 		name: "figma",
-		icon: "https://skillicons.dev/icons?i=figma",
+		icon: figma,
 	},
 	{
 		name: "docker",
-		icon: "https://skillicons.dev/icons?i=docker",
+		icon: docker,
 	},
 	{
 		name: "python",
-		icon: "https://skillicons.dev/icons?i=python",
+		icon: python,
 	},
 	{
 		name: "gcp",
-		icon: "https://skillicons.dev/icons?i=gcp",
+		icon: gcp,
 	}
 ];
 
 const shorted_technologies = [
 	{
 		name: "Node JS",
-		icon: "https://skillicons.dev/icons?i=nodejs",
+		icon: nodejs,
 	},
 	{
 		name: "MongoDB",
-		icon: "https://skillicons.dev/icons?i=mongodb",
+		icon: mongodb,
 	},
 	{
 		name: "python",
-		icon: "https://skillicons.dev/icons?i=python",
+		icon: python,
 	},
 	{
 		name: "gcp",
-		icon: "https://skillicons.dev/icons?i=gcp",
+		icon: gcp,
 	}
 ];
 

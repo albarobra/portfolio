@@ -4,6 +4,10 @@ import { SectionWrapper } from '../hoc';
 import { motion } from "framer-motion";
 import { textVariant } from '../utils/motion';
 import { styles } from '../styles';
+import reactjs from '../assets/tech/reactjs.png';
+import typescript from '../assets/tech/typescript.png';
+import javascript from '../assets/tech/javascript.png';
+import figma from '../assets/tech/figma.png';
 
 const projects = [
 	{
@@ -11,7 +15,7 @@ const projects = [
 		"desc": "Built with Next.js, Horizon enables users to connect multiple bank accounts, track real-time transactions, transfer funds securely, and manage their finances efficiently.",
 		"href": "https://github.com/pinkhousedev/Horizon",
 		"texture": "/computer/horizon.mp4",
-		"logo": "https://skillicons.dev/icons?i=react",
+		"logo": reactjs,
 		"logoStyle": {
 			backgroundColor: '#13202F',
 			border: '0.2px solid #17293E',
@@ -26,7 +30,7 @@ const projects = [
 		desc: "Developed a customizable API to generate contributor images for GitHub profile README files, showcasing the top 10 contributors in an engaging way.",
 		href: 'https://github.com/pinkhousedev/My-Contributors',
 		texture: '/computer/contributors.mp4',
-		logo: 'https://skillicons.dev/icons?i=ts',
+		logo: typescript,
 		logoStyle: {
 			backgroundColor: '#13202F',
 			border: '0.2px solid #17293E',
@@ -41,7 +45,7 @@ const projects = [
 		desc: "Developed a desktop application to provide timely notifications about scheduled power outages when the economic crisis time period in the Sri Lanka 2022, helping users prepare for electricity blackouts.",
 		href: 'https://github.com/pinkhousedev/Power-Outage',
 		texture: '/computer/power-cut.mp4',
-		logo: 'https://skillicons.dev/icons?i=js',
+		logo: javascript,
 		logoStyle: {
 			backgroundColor: '#13202F',
 			border: '0.2px solid #17293E',
@@ -86,7 +90,7 @@ const projects = [
 		desc: "Using Figma, I aimed to create a modern, user-friendly interface that enhances the overall experience while maintaining a clean and vibrant aesthetic.",
 		href: 'https://www.figma.com/proto/qgyxGcCEGKqGGx03i0ZG3b/Hutch-Redesigned?node-id=1-3&t=t5yWMrudLZuSTrML-1',
 		texture: '/computer/hutch-redesign.mp4',
-		logo: 'https://skillicons.dev/icons?i=figma',
+		logo: figma,
 		logoStyle: {
 			backgroundColor: '#13202F',
 			border: '0.2px solid #17293E',

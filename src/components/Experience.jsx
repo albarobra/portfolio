@@ -7,12 +7,18 @@ import 'react-vertical-timeline-component/style.min.css'
 import { styles } from '../styles'
 import { SectionWrapper } from '../hoc'
 import { textVariant } from '../utils/motion'
+import nodejs from '../assets/tech/nodejs.png'
+import reactjs from '../assets/tech/reactjs.png'
+import git from '../assets/tech/git.png'
+import python from '../assets/tech/python.svg'
+import typescript from '../assets/tech/typescript.png'
+import javascript from '../assets/tech/javascript.png'
 
 const experiences = [
 	{
 		title: "Intern Software Engineer",
 		company_name: "ICIEOS Pvt Ltd.",
-		icon: "https://skillicons.dev/icons?i=nodejs",
+		icon: nodejs,
 		iconBg: "#E6DEDD",
 		date: "March 2025 - Current",
 		points: [
@@ -22,7 +28,7 @@ const experiences = [
 	{
 		title: "Undergraduate",
 		company_name: "University of Sri Jayewardenepura",
-		icon: "https://skillicons.dev/icons?i=react",
+		icon: reactjs,
 		iconBg: "#383E56",
 		date: "October 2021 - Current",
 		points: [
@@ -32,7 +38,7 @@ const experiences = [
 	{
 		title: "Open Source Contributor",
 		company_name: "GitHub",
-		icon: "https://skillicons.dev/icons?i=git",
+		icon: git,
 		iconBg: "#383E56",
 		date: "August 2021 - Current",
 		points: [
@@ -44,7 +50,7 @@ const experiences = [
 	{
 		title: "Trainee",
 		company_name: "Bank of Ceylon",
-		icon: "https://skillicons.dev/icons?i=python",
+		icon: python,
 		iconBg: "#383E56",
 		date: "February 2021 - August 2021",
 		points: [
@@ -54,7 +60,7 @@ const experiences = [
 	{
 		title: "Student",
 		company_name: "Udabalawala College of Kurunegala",
-		icon: "https://skillicons.dev/icons?i=typescript",
+		icon: typescript,
 		iconBg: "#383E56",
 		date: "June 2018 - December 2020",
 		points: [
@@ -64,7 +70,7 @@ const experiences = [
 	{
 		title: "Student",
 		company_name: "Pimburuwellegama College of Kurunegala",
-		icon: "https://skillicons.dev/icons?i=javascript",
+		icon: javascript,
 		iconBg: "#383E56",
 		date: "January 2005 - December 2017",
 		points: [
