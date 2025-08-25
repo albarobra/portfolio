@@ -181,7 +181,7 @@ export const projects = [
 	{
 		"title": "Horizon – A Next.js-powered financial SaaS platform!",
 		"desc": "Built with Next.js, Horizon enables users to connect multiple bank accounts, track real-time transactions, transfer funds securely, and manage their finances efficiently.",
-		"href": "https://github.com/pinkhousedev/Horizon",
+		"href": "https://github.com/albarobra/Horizon",
 		"texture": "/computer/horizon.mp4",
 		"logo": "https://skillicons.dev/icons?i=react",
 		"logoStyle": {
@@ -196,7 +196,7 @@ export const projects = [
 	{
 		title: "Readme API - Show your top 10 collaborators",
 		desc: "Developed a customizable API to generate contributor images for GitHub profile README files, showcasing the top 10 contributors in an engaging way.",
-		href: 'https://github.com/pinkhousedev/My-Contributors',
+		href: 'https://github.com/albarobra/My-Contributors',
 		texture: '/computer/contributors.mp4',
 		logo: 'https://skillicons.dev/icons?i=ts',
 		logoStyle: {
@@ -211,7 +211,7 @@ export const projects = [
 	{
 		title: "Power outage notification system",
 		desc: "Developed a desktop application to provide timely notifications about scheduled power outages when the economic crisis time period in the Sri Lanka 2022, helping users prepare for electricity blackouts.",
-		href: 'https://github.com/pinkhousedev/Power-Outage',
+		href: 'https://github.com/albarobra/Power-Outage',
 		texture: '/computer/power-cut.mp4',
 		logo: 'https://skillicons.dev/icons?i=js',
 		logoStyle: {
@@ -226,7 +226,7 @@ export const projects = [
 	{
 		title: "iPhone 15 Pro 3D website clone",
 		desc: "Recreated the iPhone 15 Pro 3D website from scratch, delivering an immersive and interactive user experience. Built using React and Three.js for advanced 3D animations and visual effects.",
-		href: 'https://github.com/pinkhousedev/Apple',
+		href: 'https://github.com/albarobra/Apple',
 		texture: '/computer/iphone.mp4',
 		logo: 'https://skillicons.dev/icons?i=react',
 		logoStyle: {
@@ -241,7 +241,7 @@ export const projects = [
 	{
 		title: "Movie Land",
 		desc: "Check out Movie Land, a dynamic movie-searching app I built using React. It lets you browse movies by title, fetches real-time data via APIs, and delivers a seamless user experience.",
-		href: 'https://github.com/pinkhousedev/Movie-Land',
+		href: 'https://github.com/albarobra/Movie-Land',
 		texture: '/computer/movie-land.mp4',
 		logo: 'https://skillicons.dev/icons?i=react',
 		logoStyle: {
@@ -271,7 +271,7 @@ export const projects = [
 	{
 		title: "Sri Lanka Flag Animation",
 		desc: "a tribute to the vibrant spirit of Sri Lanka! Using only HTML5 and CSS3, this project brings the a flag to life with smooth, dynamic animations—no JavaScript or external libraries involved!",
-		href: 'https://github.com/pinkhousedev/Flag-Animation',
+		href: 'https://github.com/albarobra/Flag-Animation',
 		texture: '/computer/flag-animation.mp4',
 		logo: 'https://skillicons.dev/icons?i=css',
 		logoStyle: {
@@ -286,7 +286,7 @@ export const projects = [
 	{
 		title: "Netflix-UI project",
 		desc: "I've cloned the Netflix landing page using HTML5 and CSS3. This project is a great example of creating modern web interfaces with a clean, visually appealing design.",
-		href: 'https://github.com/pinkhousedev/Netflix-UI',
+		href: 'https://github.com/albarobra/Netflix-UI',
 		texture: '/computer/netflix-ui.mp4',
 		logo: 'https://skillicons.dev/icons?i=css',
 		logoStyle: {
@@ -301,7 +301,7 @@ export const projects = [
 	{
 		title: "Audi-UI, a front-end project replicating the sleek landing page of the Audi Sri Lanka website!",
 		desc: "Built using HTML5 and CSS3, this project showcases attention to design detail and responsive web development skills.It's a visually appealing and lightweight clone, perfect for exploring UI design techniques.",
-		href: 'https://github.com/pinkhousedev/Audi-UI',
+		href: 'https://github.com/albarobra/Audi-UI',
 		texture: '/computer/audi-ui.mp4',
 		logo: 'https://skillicons.dev/icons?i=css',
 		logoStyle: {
@@ -316,7 +316,7 @@ export const projects = [
 	{
 		title: "Spotify-UI, my project inspired by the sleek and iconic Spotify web player interface!",
 		desc: "Crafted entirely with HTML5 and CSS3, this project captures the essence of modern web design. While it's not yet responsive, it's a bold step towards mastering UI replication and front-end development.",
-		href: 'https://github.com/pinkhousedev/Spotify-UI',
+		href: 'https://github.com/albarobra/Spotify-UI',
 		texture: '/computer/spotify-ui.mp4',
 		logo: 'https://skillicons.dev/icons?i=css',
 		logoStyle: {
