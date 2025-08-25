@@ -115,10 +115,10 @@ const Contact = () => {
 						</button>
 						<div className="flex gap-8 items-center">
 							<a href="https://wa.me/6283137370436" target="_blank">
-								<img src="./socials/whatsapp.svg" alt="WhatsApp" className="w-[40px] h-[40px] cursor-pointer p-[6px]" />
+								<img src="./socials/whatsapp.svg" alt="WhatsApp" className="w-[40px] h-[40px] cursor-pointer" />
 							</a>
 							<a href="https://t.me/marvelous2" target="_blank">
-								<img src="./socials/telegram.svg" alt="Telegram" className="w-[40px] h-[40px] cursor-pointer p-[6px]" />
+								<img src="./socials/telegram.svg" alt="Telegram" className="w-[40px] h-[40px] cursor-pointer" />
 							</a>
 							<a href="https://github.com/albarobra" target="_blank">
 								<img src="./socials/github.svg" alt="GitHub" className="w-[40px] h-[40px] cursor-pointer" />
