@@ -4,8 +4,6 @@ import { styles } from '../styles'
 import { navLinks } from '../constants'
 import { menu, close } from '../assets'
 import { motion } from 'framer-motion'
-import { useLanguage } from '../contexts/LanguageContext'
-import LanguageSwitcher from './LanguageSwitcher'
 
 const variants = {
 	hidden: { opacity: 0, y: -20 },
@@ -16,7 +14,6 @@ const Navbar = () => {
 	const [active, setActive] = useState("")
 	const [toggle, setToggle] = useState(false)
 	const location = useLocation()
-	const { t } = useLanguage()
 
 	useEffect(() => {
 		setActive(location.hash.slice(1))
@@ -50,23 +47,18 @@ const Navbar = () => {
 								>
 									{
 										link.id === 'cv' ? (
-											<a href="./fujitayusuke.pdf" target="_blank">{t(`nav.${link.id}`)}</a>
+											<a href="./fujitayusuke.pdf" target="_blank">{link.id === 'cv' ? 'CV' : link.id}</a>
 										) : (
-											<a href={`#${link.id}`}>{t(`nav.${link.id}`)}</a>
+											<a href={`#${link.id}`}>{link.id === 'cv' ? 'CV' : link.id}</a>
 										)
 									}
 								</li>
 							))
 						}
 					</ul>
-					
-					<div className="hidden lg:flex">
-						<LanguageSwitcher />
-					</div>
 				</div>
 
 				<div className="lg:hidden flex flex-1 justify-end items-center gap-4">
-					<LanguageSwitcher />
 					<img src={toggle ? close : menu} alt="menu" className='w-[28px] h-[28px] cursor-pointer object-contain'
 						onClick={() => setToggle(!toggle)}
 					/>
@@ -89,9 +81,9 @@ const Navbar = () => {
 								>
 									{
 										link.id === 'cv' ? (
-											<a href="./Nivindu Lakshitha CV.pdf" target="_blank">{t(`nav.${link.id}`)}</a>
+											<a href="./Nivindu Lakshitha CV.pdf" target="_blank">{link.id === 'cv' ? 'CV' : link.id}</a>
 										) : (
-											<a href={`#${link.id}`}>{t(`nav.${link.id}`)}</a>
+											<a href={`#${link.id}`}>{link.id === 'cv' ? 'CV' : link.id}</a>
 										)
 									}
 								</li>
