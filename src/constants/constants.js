@@ -125,7 +125,7 @@ export const experiences = [
 	},
 	{
 		title: "Undergraduate",
-		company_name: "University of Sri Jayewardenepura",
+		company_name: "University of Indonesia Telkom",
 		icon: usjp,
 		iconBg: "#383E56",
 		date: "October 2021 - Current",
