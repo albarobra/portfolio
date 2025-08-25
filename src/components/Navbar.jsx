@@ -47,7 +47,7 @@ const Navbar = () => {
 								>
 									{
 										link.id === 'cv' ? (
-											<a href="./fujitayusuke.pdf" target="_blank">CV</a>
+											<a href="./albarobra.pdf" target="_blank">CV</a>
 										) : (
 											<a href={`#${link.id}`}>{link.id === 'cv' ? 'CV' : link.id}</a>
 										)
@@ -81,7 +81,7 @@ const Navbar = () => {
 								>
 									{
 										link.id === 'cv' ? (
-											<a href="./fujitayusuke.pdf" target="_blank">CV</a>
+											<a href="./albarobra.pdf" target="_blank">CV</a>
 										) : (
 											<a href={`#${link.id}`}>{link.id === 'cv' ? 'CV' : link.id}</a>
 										)
