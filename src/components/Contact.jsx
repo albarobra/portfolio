@@ -43,7 +43,7 @@ const Contact = () => {
 			{
 				name: form.name,
 				message: form.message,
-				from:form.email
+				from: form.email
 			},
 			'rilgPask0j_ZRbDBQ'
 		);
@@ -114,6 +114,9 @@ const Contact = () => {
 							{loading ? 'Sending...' : 'Send Message'}
 						</button>
 						<div className="flex gap-8 items-center">
+							<a href="https://wa.me/6283137370436" target="_blank">
+								<img src="./socials/whatsapp.svg" alt="WhatsApp" className="w-[40px] h-[40px] cursor-pointer p-[6px]" />
+							</a>
 							<a href="https://t.me/marvelous2" target="_blank">
 								<img src="./socials/telegram.svg" alt="Telegram" className="w-[40px] h-[40px] cursor-pointer p-[6px]" />
 							</a>
